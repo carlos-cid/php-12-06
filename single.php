@@ -1,7 +1,7 @@
-<?php include("header.php");?>
+<?php include("head.php");?>
 
 <?php
-$csv = array_map('str_getcsv', file('https://raw.githubusercontent.com/carlos-cid/php-29-05/gh-pages/datos.csv'));
+$csv = array_map('str_getcsv', file('https://raw.githubusercontent.com/carlos-cid/php-12-06/gh-pages/datos.csv'));
 array_walk($csv, function(&$a) use ($csv) {$a = array_combine($csv[0], $a);});
 array_shift($csv);
 $la_url = $_GET['url'];

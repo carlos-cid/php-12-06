@@ -1,4 +1,21 @@
-<?php include('header.php');?>
+<?php include('head.php');?>
+
+<!-- Page Header -->
+ <!-- Set your background image for this header on the line below. -->
+ <header class="intro-header" style="background-image: url('https://raw.githubusercontent.com/carlos-cid/php-12-06/gh-pages/img/play.jpg')">
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                 <div class="site-heading">
+                     <h1>La Evolución del Cine Chileno</h1>
+                     <hr class="small">
+                     <span class="subheading">Como reflejo de nuestra sociedad</span>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </header>
+
 <!-- Main Content -->
    <div class="container">
        <div class="row">
@@ -17,8 +34,8 @@ array_shift($csv);
                  <div class="post-preview">
                      <a href="single.php?url=<?php print($a)?>">
                          <h2 class="post-title"><?php echo($csv[$a]["titulo"])?></h2>
-                         <h3 class="post-subtitle">
-                             <?php echo($csv[$a]["texto"])?>
+
+                             <?php echo($csv[$a]["apa"])?>
                          </h3>
                      </a>
                      <p class="post-meta">Tags: <?php echo($csv[$a]["tags"]);?></p>

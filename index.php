@@ -5,7 +5,7 @@
            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
 <?php
-$csv = array_map('str_getcsv', file('https://raw.githubusercontent.com/carlos-cid/php-29-05/gh-pages/datos.csv'));
+$csv = array_map('str_getcsv', file('https://raw.githubusercontent.com/carlos-cid/php-12-06/gh-pages/datos.csv'));
 // pero debo hacer un pequeño ajuste, para eliminar del arreglo el encabezado del imdb-movies.csv
 array_walk($csv, function(&$a) use ($csv) {$a = array_combine($csv[0], $a);});
 array_shift($csv);
